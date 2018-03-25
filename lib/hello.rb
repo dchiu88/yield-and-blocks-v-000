@@ -5,11 +5,10 @@ def hello_t(array)
     yield array[i]
     i = i + 1
   end
-
   array
-
 else
   puts "Hey!, no block was given!"
+end
 end
 
 hello_t(["Tim", "Tom", "Jim"]) do |name|
